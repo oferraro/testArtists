@@ -1,0 +1,11 @@
+<div>
+    {{error}}
+</div>
+
+<form data-ng-submit="addArtist()"> 
+    Nombre: <input type="text" name="artistName" data-ng-model="artist.name"><br>
+    Apellido: <input type="text" name="artistLastName" data-ng-model="artist.lastName"><br>
+    Función: <input type="text" name="artistFunction" data-ng-model="artist.function">
+    <input data-ng-if="editID" type="hidden" name="id" data-ng-model="artist.id">
+    <input type="submit" value="Agregar">    
+</form>

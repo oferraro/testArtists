@@ -1,0 +1,10 @@
+<div>
+    {{error}}
+</div>
+{{edit}}
+<form data-ng-submit="addAlbum()"> 
+    Nombre: <input type="text" name="albumName" data-ng-model="album.name"><br>
+    Fecha: <input type="text" name="albumDate" data-ng-model="album.date">
+    <input data-ng-if="editID" type="hidden" name="id" data-ng-model="album.id">
+    <input type="submit" value="Agregar">    
+</form>

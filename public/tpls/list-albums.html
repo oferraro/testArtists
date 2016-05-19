@@ -1,0 +1,8 @@
+
+<div data-ng-repeat="album in albums">
+    Album: {{album.name}} <br>
+    Fecha: {{album.edition_date}}
+    <a data-ng-click="editAlbum(album.id)">editar</a>
+    <a data-ng-click="deleteAlbum(album.id)">borrar</a>
+    <hr>
+</div>
